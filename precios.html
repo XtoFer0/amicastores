@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Amica Planes</title>
+	<meta charset="utf-8"/>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Allerta" rel="stylesheet">
+	<link rel="stylesheet" href="css/amica.css">
+
+</head>
+<body>
+		<header id="header" class="header background"><!-- header -->
+		
+			<div class="contenedor">
+			<figure class="logotipo">		<!-- logotipo -->
+			<img src="images/log.png" width="150" height="150" alt="Amica Logotipo">
+			</figure>
+			<nav class="menu"><!-- menu -->
+			<ul>
+				<li>
+					<a href="indexmio.html">Home</a>
+				</li>
+
+				<li>
+					<a href="indexmio.html#productos">Productos</a>
+				</li>
+
+				<li>
+					<a href="precios.html">Precios</a>
+				</li>
+			</ul>
+			</nav>	
+			</div>
+
+		
+	</header>
+		  <section class="tabla">
+	  	<div class="contenedor">
+	  		
+	  	<table>
+	  		<thead>
+	  			<tr>
+	  				<th>Opciones</th>
+	  				<th>Precio</th>
+	  				<th>Descripción</th>
+	  			</tr>
+	  		</thead>
+	  		<tbody>
+	  			<tr>
+	  				<td>Plan PW</td>
+	  				<td>$ 49.00</td>
+	  				<td>Página Web</td>
+	  			</tr>
+	  			<tr>
+	  				<td>Plan E</td>
+	  				<td>$ 69.00</td>
+	  				<td>E-comerce</td>
+	  			</tr>
+	  			<tr>
+	  				<td>Plan MD</td>
+	  				<td>$ 89.00</td>
+	  				<td>Marketing Digital</td>
+	  			</tr>
+	  		</tbody>
+
+	  	</table>
+	  	</div>
+	  		
+	  </section>
+
+		<footer class="footer">
+		<div class="contenedor">
+			<div class="contacto">
+				<img src="images/log.png" width="140" height="140" alt="Amica Logotipo">
+				<a href="tel:+54928882371"><strong>Telefono</strong> <span>928882371</span> </a>
+				<a href="mailto:0"><strong>E-mail</strong> <span>amicasoft.gmail.com</span> </a>
+		</div>
+		 <form class="formulario">
+			<div class="col1">
+			<label for="Nombre">Nombre</label>
+			<input type="text" required id="Nombre" name="nombre" />
+			<label for="Email">E-mail</label>
+			<input type="Email" required id="Email" name="Email" />
+
+			<div class="sexo">
+			<label for="mujer">
+				<input type="radio" id="mujer" checked name="sexo" value="mujer">Mujer
+			</label>
+			<label for="hombre">
+				<input type="radio" id="hombre" name="sexo" value="hombre">Hombre
+			</label>
+			</div>
+			<div class="intereses">
+				<label for="cotizacion">
+				<input type="checkbox" checked name="intereses" id="cotizacion" value="cotizacion">Cotizacion
+				</label>
+				<label for="reclamos">
+				<input type="checkbox" name="intereses" id="reclamos" value="reclamos">Reclamos
+				</label>
+				<label for="comentarios">
+				<input type="checkbox" name="intereses" id="comentarios" value="comentarios">Comentarios
+				</label>
+				<label for="otros">
+				<input type="checkbox" name="intereses" id="otros" value="otros">Otros
+				</label>
+			  </div>
+			</div>
+			<div class="col2">
+
+				<label for="comentarios">Comentarios</label>
+					<textarea name="comentarios" id="comentarios" cols="30" rows="7"></textarea> 
+					<input type="submit" name="" value="Enviar" class="button">	
+			</div>
+		</form>
+		<!--		al dar click en nombre nos redirecciona al espacio apra llenar
+			y lo mismo para email
+ 			require en el caso de email para que me pida xxxxx@xxxx
+			value da un texto predeterminado
+			placeholder un texto difuminado -->
+	  </div>	
+
+
+	</footer>
+</body>
+</html>

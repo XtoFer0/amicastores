@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Amica - tu mejor opcion en paginas web</title>
+	<meta charset="utf-8"/>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Allerta" rel="stylesheet">
+	<link rel="stylesheet" href="css/amica.css">
+
+</head>
+<body>
+	<section id="portada" class="portada background"> <!-- portada -->
+	<header id="header" class="header contenedor"><!-- header -->
+		<figure class="logotipo">		<!-- logotipo -->
+			<img src="images/log.png" width="150" height="150" alt="Amica Logotipo">
+		</figure>
+		<nav class="menu"><!-- menu -->
+			<ul>
+				<li>
+					<a href="indexmio.html">Home</a>
+				</li>
+
+				<li>
+					<a href="#productos">Productos</a>
+				</li>
+
+				<li>
+					<a href="precios.html">Precios</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+		<!-- no añade valor semantico sirve para añadirle efectos visuales -->
+		<div class="contenedor">
+		<h1 class="titulo">Amica Web Design</h1><!-- titulo -->
+		<h3 class="title-a">Desarrollo de paginas web, aplicaciones moviles y soluciones tecnologicas</h3><!-- resumen -->
+		<button class="button">Conoce mas</button><!-- boton -->
+		</div>
+	</section>
+	<section id="productos" class="productos contenedor"><!-- amica products -->
+		<h2>Nuestros Productos</h2><!-- titulo -->
+
+		<article class="producto"><!-- Plan 59 -->
+			<img class="right" src="images/amica59.png" alt="Amica 49" width="350" height="200"/>
+			
+			<div class="contenedor-productos-a">
+				
+			<h3 class="title-b">Plan 49</h3>
+			<ol>
+				<li>Capacidad de almacenamiento</li>
+				<li>Correos corporativos</li>
+				<li>Web con responsive design</li>
+			</ol>
+
+			</div>
+
+		</article>
+
+		<article class="producto b">
+			<img class="left" src="images/amica59.png" alt="Amica 69" width="350" height="200"/>
+			
+			<div class="contenedor-productos-b">
+				
+			<h3 class="title-b">Plan 69</h3>
+			<ol>
+				<li>Mayor capacidad de almacenamiento</li>
+				<li>Correos corporativos ilimitados</li>
+				<li>Web con responsive design</li>
+				<li>E-comerce</li>
+			</ol>
+
+			</div>
+
+		</article><!-- plan 69 -->		
+	</section>
+
+	<footer class="footer">
+		<div class="contenedor">
+			<div class="contacto">
+				<img src="images/log.png" width="150" height="150" alt="Amica Logotipo">
+				<a href="tel:+54928882371"><strong>Telefono</strong> <span>928882371</span> </a>
+				<a href="mailto:0"><strong>E-mail</strong> <span>amicasoft.gmail.com</span> </a>
+		</div>
+		 <form class="formulario">
+			<div class="col1">
+			<label for="Nombre">Nombre</label>
+			<input type="text" required id="Nombre" name="nombre" />
+			<label for="Email">E-mail</label>
+			<input type="Email" required id="Email" name="Email" />
+
+			<div class="sexo">
+			<label for="mujer">
+				<input type="radio" id="mujer" checked name="sexo" value="mujer">Mujer
+			</label>
+			<label for="hombre">
+				<input type="radio" id="hombre" name="sexo" value="hombre">Hombre
+			</label>
+			</div>
+			<div class="intereses">
+				<label for="cotizacion">
+				<input type="checkbox" checked name="intereses" id="cotizacion" value="cotizacion">Cotizacion
+				</label>
+				<label for="reclamos">
+				<input type="checkbox" name="intereses" id="reclamos" value="reclamos">Reclamos
+				</label>
+				<label for="comentarios">
+				<input type="checkbox" name="intereses" id="comentarios" value="comentarios">Comentarios
+				</label>
+				<label for="otros">
+				<input type="checkbox" name="intereses" id="otros" value="otros">Otros
+				</label>
+			  </div>
+			</div>
+			<div class="col2">
+
+				<label for="comentarios">Comentarios</label>
+					<textarea name="comentarios" id="comentarios" cols="30" rows="7"></textarea> 
+					<input type="submit" name="" value="Enviar" class="button">	
+			</div>
+		</form>
+		<!--		al dar click en nombre nos redirecciona al espacio apra llenar
+			y lo mismo para email
+ 			require en el caso de email para que me pida xxxxx@xxxx
+			value da un texto predeterminado
+			placeholder un texto difuminado -->
+	  </div>	
+	</footer>
+ </body>
+</html>
