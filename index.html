@@ -3,9 +3,11 @@
 <head>
 	<title>Amica - tu mejor opcion en paginas web</title>
 	<meta charset="utf-8"/>
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Allerta" rel="stylesheet">
-	<link rel="stylesheet" href="css/amica.css">
-
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Allerta" rel="stylesheet"/>
+	<link rel="stylesheet" href="css/amica.css"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+<!-- 	<link rel="stylesheet" media="(max-width: 800px)" href="css/media-querie.css">
+ -->
 </head>
 <body>
 	<section id="portada" class="portada background"> <!-- portada -->
@@ -13,7 +15,8 @@
 		<figure class="logotipo">		<!-- logotipo -->
 			<img src="images/log.png" width="150" height="150" alt="Amica Logotipo">
 		</figure>
-		<nav class="menu"><!-- menu -->
+		<span class="burger-button icon-menu" id="burger-button"></span>
+		<nav class="menu" id="menu"><!-- menu -->
 			<ul>
 				<li>
 					<a href="indexmio.html">Home</a>
@@ -124,5 +127,13 @@
 			placeholder un texto difuminado -->
 	  </div>	
 	</footer>
+	<script>
+		var $burgerButton = document.getElementById('burger-button');	
+		var $menu = document.getElementById('menu');
+		$burgerButton.addEventListener('touchstart',
+			function togglemenu(){
+			$menu.classList.toggle('active')
+		});
+	</script>
  </body>
 </html>
